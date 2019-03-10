@@ -2,33 +2,27 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
 <html class="theme-next mist use-motion" lang="en">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 
 
 
-  
-  
-    
-    
-  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -45,9 +39,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -55,25 +46,21 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
 
-<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-zhumark.png?v=5.1.3">
+<link rel="stylesheet" href="/css/main.css?v=7.0.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-zhumark.ico?v=5.1.3">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-zhumark.png?v=7.0.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-zhumark.ico?v=5.1.3">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32-zhumark.ico?v=7.0.0">
 
 
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/16x16-zhumark.ico?v=7.0.0">
 
 
-
-
-  <meta name="keywords" content="Google,Machine Learning," />
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.0" color="#222">
 
 
 
@@ -81,38 +68,18 @@
 
 
 
-
-
-
-<meta name="description" content="机器学习项目运行时间比较长，跑起来非常耗费电脑资源，使用CPU基本是龟速前进。比较好的方法是使用GPU进行加速，然而GPU服务器，无论按小时计费还是按秒计费都非常贵，毕竟资源有限。最近发现，Google拥有一项免费云端机器学习服务，使用的GPU为Tesla K80，效果还是很不错的。">
-<meta name="keywords" content="Google,Machine Learning">
-<meta property="og:type" content="article">
-<meta property="og:title" content="使用Google服务跑机器学习">
-<meta property="og:url" content="http://www.zhumark.cn/2018/04/19/使用Google服务跑机器学习/index.html">
-<meta property="og:site_name" content="Zhumark&#39;s Blog">
-<meta property="og:description" content="机器学习项目运行时间比较长，跑起来非常耗费电脑资源，使用CPU基本是龟速前进。比较好的方法是使用GPU进行加速，然而GPU服务器，无论按小时计费还是按秒计费都非常贵，毕竟资源有限。最近发现，Google拥有一项免费云端机器学习服务，使用的GPU为Tesla K80，效果还是很不错的。">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-04-19T06:50:34.225Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用Google服务跑机器学习">
-<meta name="twitter:description" content="机器学习项目运行时间比较长，跑起来非常耗费电脑资源，使用CPU基本是龟速前进。比较好的方法是使用GPU进行加速，然而GPU服务器，无论按小时计费还是按秒计费都非常贵，毕竟资源有限。最近发现，Google拥有一项免费云端机器学习服务，使用的GPU为Tesla K80，效果还是很不错的。">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
+<script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    version: '5.1.3',
-    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
-    fancybox: true,
+    version: '7.0.0',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -124,14 +91,40 @@
 </script>
 
 
-
-  <link rel="canonical" href="http://www.zhumark.cn/2018/04/19/使用Google服务跑机器学习/"/>
-
+  
 
 
 
 
-  <title>使用Google服务跑机器学习 | Zhumark's Blog</title>
+  <meta name="description" content="机器学习项目运行时间比较长，跑起来非常耗费电脑资源，使用CPU基本是龟速前进。比较好的方法是使用GPU进行加速，然而GPU服务器，无论按小时计费还是按秒计费都非常贵，毕竟资源有限。最近发现，Google拥有一项免费云端机器学习服务，使用的GPU为Tesla K80，效果还是很不错的。">
+<meta name="keywords" content="Google,Machine Learning">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用Google服务学习机器学习">
+<meta property="og:url" content="http://www.zhumark.cn/2018/04/19/使用Google服务跑机器学习/index.html">
+<meta property="og:site_name" content="Zhumark&#39;s Blog">
+<meta property="og:description" content="机器学习项目运行时间比较长，跑起来非常耗费电脑资源，使用CPU基本是龟速前进。比较好的方法是使用GPU进行加速，然而GPU服务器，无论按小时计费还是按秒计费都非常贵，毕竟资源有限。最近发现，Google拥有一项免费云端机器学习服务，使用的GPU为Tesla K80，效果还是很不错的。">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-03-10T10:19:02.422Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用Google服务学习机器学习">
+<meta name="twitter:description" content="机器学习项目运行时间比较长，跑起来非常耗费电脑资源，使用CPU基本是龟速前进。比较好的方法是使用GPU进行加速，然而GPU服务器，无论按小时计费还是按秒计费都非常贵，毕竟资源有限。最近发现，Google拥有一项免费云端机器学习服务，使用的GPU为Tesla K80，效果还是很不错的。">
+
+
+
+
+
+
+  <link rel="canonical" href="http://www.zhumark.cn/2018/04/19/使用Google服务跑机器学习/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>使用Google服务学习机器学习 | Zhumark's Blog</title>
   
 
 
@@ -141,9 +134,38 @@
 
 
 
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -153,25 +175,24 @@
   <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Zhumark's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
+    
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -179,76 +200,114 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Home
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            About
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            Categories
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
 
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
       
         <li class="menu-item menu-item-search">
           
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            Search
-          </a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>Search</a>
         </li>
       
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -263,9 +322,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="Searching..." spellcheck="false"
-             type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -279,12 +336,20 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
 
@@ -297,20 +362,22 @@
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.zhumark.cn/2018/04/19/使用Google服务跑机器学习/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhumark">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Zhumark's Blog">
     </span>
 
@@ -319,43 +386,57 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">使用Google服务跑机器学习</h1>
+          <h1 class="post-title" itemprop="name headline">使用Google服务学习机器学习
+
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-19T00:14:01+08:00">
-                2018-04-19
-              </time>
+            
             
 
             
-              <span class="post-meta-divider">|</span>
-            
 
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">Post modified&#58;</span>
+
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-04-19T14:50:34+08:00">
-                2018-04-19
-              </time>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Modified: 2019-03-10 18:19:02" itemprop="dateModified" datetime="2019-03-10T18:19:02+08:00">2019-03-10</time>
+              
             
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Machine-Learning/" itemprop="url" rel="index"><span itemprop="name">Machine Learning</span></a></span>
+
+                
+                
+              
+            </span>
+          
 
           
+            
             
           
 
@@ -363,43 +444,7 @@
           
 
           
-            <span class="post-meta-divider">|</span>
-            <span class="page-pv"><i class="fa fa-file-o"></i>
-            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
-            </span>
-          
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
-                
-                <span title="Words count in article">
-                  1,701
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">
-                  7
-                </span>
-              
-            </div>
           
 
           
@@ -431,50 +476,53 @@
 <p>然后，就可以使用Google Colab愉快的玩耍了。</p>
 <h2 id="运行基本Python代码"><a href="#运行基本Python代码" class="headerlink" title="运行基本Python代码"></a>运行基本Python代码</h2><p>因为默认已经装好了一些机器学习常用的框架，所以可以直接上手。试着在代码单元格中使用python代码，如使用numpy运算库等，运行结果如你所料。</p>
 <h2 id="用Colab运行-py文件"><a href="#用Colab运行-py文件" class="headerlink" title="用Colab运行.py文件"></a>用Colab运行.py文件</h2><h3 id="Google-Drive授权"><a href="#Google-Drive授权" class="headerlink" title="Google Drive授权"></a>Google Drive授权</h3><p>先运行下面这些代码，来安装必要的库、执行授权。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">!apt-get install -y -qq software-properties-common python-software-properties module-init-tools</div><div class="line">!add-apt-repository -y ppa:alessandro-strada/ppa <span class="number">2</span>&gt;&amp;<span class="number">1</span> &gt; /dev/null</div><div class="line">!apt-get update -qq <span class="number">2</span>&gt;&amp;<span class="number">1</span> &gt; /dev/null</div><div class="line">!apt-get -y install -qq google-drive-ocamlfuse fuse</div><div class="line"><span class="keyword">from</span> google.colab <span class="keyword">import</span> auth</div><div class="line">auth.authenticate_user()</div><div class="line"><span class="keyword">from</span> oauth2client.client <span class="keyword">import</span> GoogleCredentials</div><div class="line">creds = GoogleCredentials.get_application_default()</div><div class="line"><span class="keyword">import</span> getpass</div><div class="line">!google-drive-ocamlfuse -headless -id=&#123;creds.client_id&#125; -secret=&#123;creds.client_secret&#125; &lt; /dev/null <span class="number">2</span>&gt;&amp;<span class="number">1</span> | grep URL</div><div class="line">vcode = getpass.getpass()</div><div class="line">!echo &#123;vcode&#125; | google-drive-ocamlfuse -headless -id=&#123;creds.client_id&#125; -secret=&#123;creds.client_secret&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">!apt-get install -y -qq software-properties-common python-software-properties module-init-tools</span><br><span class="line">!add-apt-repository -y ppa:alessandro-strada/ppa <span class="number">2</span>&gt;&amp;<span class="number">1</span> &gt; /dev/null</span><br><span class="line">!apt-get update -qq <span class="number">2</span>&gt;&amp;<span class="number">1</span> &gt; /dev/null</span><br><span class="line">!apt-get -y install -qq google-drive-ocamlfuse fuse</span><br><span class="line"><span class="keyword">from</span> google.colab <span class="keyword">import</span> auth</span><br><span class="line">auth.authenticate_user()</span><br><span class="line"><span class="keyword">from</span> oauth2client.client <span class="keyword">import</span> GoogleCredentials</span><br><span class="line">creds = GoogleCredentials.get_application_default()</span><br><span class="line"><span class="keyword">import</span> getpass</span><br><span class="line">!google-drive-ocamlfuse -headless -id=&#123;creds.client_id&#125; -secret=&#123;creds.client_secret&#125; &lt; /dev/null <span class="number">2</span>&gt;&amp;<span class="number">1</span> | grep URL</span><br><span class="line">vcode = getpass.getpass()</span><br><span class="line">!echo &#123;vcode&#125; | google-drive-ocamlfuse -headless -id=&#123;creds.client_id&#125; -secret=&#123;creds.client_secret&#125;</span><br></pre></td></tr></table></figure>
 <p>看见那个链接之后，点击它，复制验证码并粘贴到文本框里,确认后就可以看到授权成功的信息了。</p>
 <p>授权完成后，就可以挂载Google Drive了：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">!mkdir -p drive</div><div class="line">!google-drive-ocamlfuse drive</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">!mkdir -p drive</span><br><span class="line">!google-drive-ocamlfuse drive</span><br></pre></td></tr></table></figure>
 <p>每隔一段时间之后，colab给分配的环境会被自动初始化，下次进来得重新挂载google drive，以上代码几乎每次打开都得执行。</p>
 <p>Colab 自带了 Tensorflow、Matplotlib、Numpy、Pandas 等深度学习基础库。如果还需要其他依赖，如 Keras，可以新建代码块，输入</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 安装最新版本Keras</span></div><div class="line"><span class="comment"># https://keras.io/</span></div><div class="line">!pip install keras</div><div class="line"><span class="comment"># 指定版本安装</span></div><div class="line">!pip install keras==<span class="number">2.0</span><span class="number">.9</span></div><div class="line"><span class="comment"># 安装 OpenCV</span></div><div class="line"><span class="comment"># https://opencv.org/</span></div><div class="line">!apt-get -qq install -y libsm6 libxext6 &amp;&amp; pip install -q -U opencv-python</div><div class="line"><span class="comment"># 安装 Pytorch</span></div><div class="line"><span class="comment"># http://pytorch.org/</span></div><div class="line">!pip install -q http://download.pytorch.org/whl/cu75/torch<span class="number">-0.2</span><span class="number">.0</span>.post3-cp27-cp27mu-manylinux1_x86_64.whl torchvision</div><div class="line"><span class="comment"># 安装 XGBoost</span></div><div class="line"><span class="comment"># https://github.com/dmlc/xgboost</span></div><div class="line">!pip install -q xgboost</div><div class="line"><span class="comment"># 安装 7Zip</span></div><div class="line">!apt-get -qq install -y libarchive-dev &amp;&amp; pip install -q -U libarchive</div><div class="line"><span class="comment"># 安装 GraphViz 和 PyDot</span></div><div class="line">!apt-get -qq install -y graphviz &amp;&amp; pip install -q pydot</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装最新版本Keras</span></span><br><span class="line"><span class="comment"># https://keras.io/</span></span><br><span class="line">!pip install keras</span><br><span class="line"><span class="comment"># 指定版本安装</span></span><br><span class="line">!pip install keras==<span class="number">2.0</span><span class="number">.9</span></span><br><span class="line"><span class="comment"># 安装 OpenCV</span></span><br><span class="line"><span class="comment"># https://opencv.org/</span></span><br><span class="line">!apt-get -qq install -y libsm6 libxext6 &amp;&amp; pip install -q -U opencv-python</span><br><span class="line"><span class="comment"># 安装 Pytorch</span></span><br><span class="line"><span class="comment"># http://pytorch.org/</span></span><br><span class="line">!pip install -q http://download.pytorch.org/whl/cu75/torch<span class="number">-0.2</span><span class="number">.0</span>.post3-cp27-cp27mu-manylinux1_x86_64.whl torchvision</span><br><span class="line"><span class="comment"># 安装 XGBoost</span></span><br><span class="line"><span class="comment"># https://github.com/dmlc/xgboost</span></span><br><span class="line">!pip install -q xgboost</span><br><span class="line"><span class="comment"># 安装 7Zip</span></span><br><span class="line">!apt-get -qq install -y libarchive-dev &amp;&amp; pip install -q -U libarchive</span><br><span class="line"><span class="comment"># 安装 GraphViz 和 PyDot</span></span><br><span class="line">!apt-get -qq install -y graphviz &amp;&amp; pip install -q pydot</span><br></pre></td></tr></table></figure>
 <p>将mnist_cnn.py文件上传到位于Google云端硬盘上的应用文件夹：</p>
 <p>运行下面的代码，用MNIST数据集训练一个简单的卷积神经网络：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">!python3 drive/app/mnist_cnn.py</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!python3 drive/app/mnist_cnn.py</span><br></pre></td></tr></table></figure>
 <p>从结果中可以看到，每个epoch只需要11秒。</p>
 <h3 id="下载泰坦尼克数据集"><a href="#下载泰坦尼克数据集" class="headerlink" title="下载泰坦尼克数据集"></a>下载泰坦尼克数据集</h3><p>想按照链接下载.csv文件到app文件夹，只需运行：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">!wget https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/datasets/Titanic.csv -P drive/app</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!wget https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/datasets/Titanic.csv -P drive/app</span><br></pre></td></tr></table></figure>
 <p>也可以直接将.csv文件上传到app文件夹。</p>
 <h2 id="一些小的代码片段"><a href="#一些小的代码片段" class="headerlink" title="一些小的代码片段"></a>一些小的代码片段</h2><p>在笔记本的左侧，打开三角形的指示器，在代码段目录下，你可以看到一些Google提供的小脚本，方便你的一些操作。</p>
 <p>例如，你可以安装7zip reader</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">!apt-get -qq install -y libarchive-dev &amp;&amp; pip install -q -U libarchiv</div><div class="line"><span class="keyword">import</span> libarchive</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">!apt-get -qq install -y libarchive-dev &amp;&amp; pip install -q -U libarchiv</span><br><span class="line"><span class="keyword">import</span> libarchive</span><br></pre></td></tr></table></figure>
 <p>也可以保存数据到Google Drive</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Install the PyDrive wrapper &amp; import libraries.</span></div><div class="line"><span class="comment"># This only needs to be done once in a notebook.</span></div><div class="line">!pip install -U -q PyDrive</div><div class="line"><span class="keyword">from</span> pydrive.auth <span class="keyword">import</span> GoogleAuth</div><div class="line"><span class="keyword">from</span> pydrive.drive <span class="keyword">import</span> GoogleDrive</div><div class="line"><span class="keyword">from</span> google.colab <span class="keyword">import</span> auth</div><div class="line"><span class="keyword">from</span> oauth2client.client <span class="keyword">import</span> GoogleCredentials</div><div class="line"></div><div class="line"><span class="comment"># Authenticate and create the PyDrive client.</span></div><div class="line"><span class="comment"># This only needs to be done once in a notebook.</span></div><div class="line">auth.authenticate_user()</div><div class="line">gauth = GoogleAuth()</div><div class="line">gauth.credentials = GoogleCredentials.get_application_default()</div><div class="line">drive = GoogleDrive(gauth)</div><div class="line"></div><div class="line"><span class="comment"># Create &amp; upload a text file.</span></div><div class="line">uploaded = drive.CreateFile(&#123;<span class="string">'title'</span>: <span class="string">'Sample file.txt'</span>&#125;)</div><div class="line">uploaded.SetContentString(<span class="string">'Sample upload file content'</span>)</div><div class="line">uploaded.Upload()</div><div class="line">print(<span class="string">'Uploaded file with ID &#123;&#125;'</span>.format(uploaded.get(<span class="string">'id'</span>)))</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Install the PyDrive wrapper &amp; import libraries.</span></span><br><span class="line"><span class="comment"># This only needs to be done once in a notebook.</span></span><br><span class="line">!pip install -U -q PyDrive</span><br><span class="line"><span class="keyword">from</span> pydrive.auth <span class="keyword">import</span> GoogleAuth</span><br><span class="line"><span class="keyword">from</span> pydrive.drive <span class="keyword">import</span> GoogleDrive</span><br><span class="line"><span class="keyword">from</span> google.colab <span class="keyword">import</span> auth</span><br><span class="line"><span class="keyword">from</span> oauth2client.client <span class="keyword">import</span> GoogleCredentials</span><br><span class="line"></span><br><span class="line"><span class="comment"># Authenticate and create the PyDrive client.</span></span><br><span class="line"><span class="comment"># This only needs to be done once in a notebook.</span></span><br><span class="line">auth.authenticate_user()</span><br><span class="line">gauth = GoogleAuth()</span><br><span class="line">gauth.credentials = GoogleCredentials.get_application_default()</span><br><span class="line">drive = GoogleDrive(gauth)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Create &amp; upload a text file.</span></span><br><span class="line">uploaded = drive.CreateFile(&#123;<span class="string">'title'</span>: <span class="string">'Sample file.txt'</span>&#125;)</span><br><span class="line">uploaded.SetContentString(<span class="string">'Sample upload file content'</span>)</span><br><span class="line">uploaded.Upload()</span><br><span class="line">print(<span class="string">'Uploaded file with ID &#123;&#125;'</span>.format(uploaded.get(<span class="string">'id'</span>)))</span><br></pre></td></tr></table></figure>
 <p>要查看你在Colab里是不是真的在用GPU，可以运行以下代码来交叉检查：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</div><div class="line">tf.test.gpu_device_name()</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line">tf.test.gpu_device_name()</span><br></pre></td></tr></table></figure>
 <p>要想知道你在使用那块GPU，使用下面的代码即可：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> tensorflow.python.client <span class="keyword">import</span> device_lib</div><div class="line">device_lib.list_local_devices()</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> tensorflow.python.client <span class="keyword">import</span> device_lib</span><br><span class="line">device_lib.list_local_devices()</span><br></pre></td></tr></table></figure>
 <p>按照输出结果来看，其实Colab只有一个CPU和一块Tesla K80的GPU，但这对我们开始足够了。</p>
 <p>查看RAM和CPU信息：</p>
-<figure class="highlight armasm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">!cat /<span class="meta">proc</span>/meminfo</div><div class="line">!cat /<span class="meta">proc</span>/cpuinfo</div></pre></td></tr></table></figure>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">!cat /<span class="meta">proc</span>/meminfo</span><br><span class="line">!cat /<span class="meta">proc</span>/cpuinfo</span><br></pre></td></tr></table></figure>
 <p>在colab环境中，我们挂载Google drive的位置是/content/drive/ 。colab中的notebook和py文件默认都是以/content/ 作为工作目录，如果我们要切换工作路径。需要执行一下命令手动切换工作目录，例如：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> os</div><div class="line">path = <span class="string">"/content/drive/path/to/file(s)"</span></div><div class="line">os.chdir(path)</div><div class="line">os.list(path)</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line">path = <span class="string">"/content/drive/path/to/file(s)"</span></span><br><span class="line">os.chdir(path)</span><br><span class="line">os.list(path)</span><br></pre></td></tr></table></figure>
 <p>遍历目录</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 列出根目录的所有文件</span></div><div class="line"><span class="comment"># "q" 查询条件教程详见：https://developers.google.com/drive/v2/web/search-parameters</span></div><div class="line">file_list = drive.ListFile(&#123;<span class="string">'q'</span>: <span class="string">"'root' in parents and trashed=false"</span>&#125;).GetList()</div><div class="line"><span class="keyword">for</span> file1 <span class="keyword">in</span> file_list:</div><div class="line">  print(<span class="string">'title: %s, id: %s, mimeType: %s'</span> % (file1[<span class="string">'title'</span>], file1[<span class="string">'id'</span>], file1[<span class="string">"mimeType"</span>]))</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 列出根目录的所有文件</span></span><br><span class="line"><span class="comment"># "q" 查询条件教程详见：https://developers.google.com/drive/v2/web/search-parameters</span></span><br><span class="line">file_list = drive.ListFile(&#123;<span class="string">'q'</span>: <span class="string">"'root' in parents and trashed=false"</span>&#125;).GetList()</span><br><span class="line"><span class="keyword">for</span> file1 <span class="keyword">in</span> file_list:</span><br><span class="line">  print(<span class="string">'title: %s, id: %s, mimeType: %s'</span> % (file1[<span class="string">'title'</span>], file1[<span class="string">'id'</span>], file1[<span class="string">"mimeType"</span>]))</span><br></pre></td></tr></table></figure>
 <p>我们看到的控制台打印结果中，其中的id是我们获取文件的唯一标识。</p>
 <p>读取文件内容</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#for .txt file</span></div><div class="line">file = drive.CreateFile(&#123;<span class="string">'id'</span>: <span class="string">"替换成你的 .txt 文件 id"</span>&#125;) </div><div class="line">file.GetContentString()</div><div class="line"></div><div class="line"><span class="comment">#for .csv file</span></div><div class="line"><span class="comment">#GetContentString()只能打印第一行数据</span></div><div class="line">file = drive.CreateFile(&#123;<span class="string">'id'</span>: <span class="string">"替换成你的 .csv 文件 id"</span>&#125;) </div><div class="line"><span class="comment">#这里的下载操作只是缓存，不会在你的Google Drive 目录下多下载一个文件</span></div><div class="line">file.GetContentFile(<span class="string">'iris.csv'</span>, <span class="string">"text/csv"</span>) </div><div class="line"><span class="comment"># 直接打印文件内容</span></div><div class="line"><span class="keyword">with</span> open(<span class="string">'iris.csv'</span>) <span class="keyword">as</span> f:</div><div class="line">  <span class="keyword">print</span> f.readlines()</div><div class="line"><span class="comment"># 用 pandas 读取</span></div><div class="line"><span class="keyword">import</span> pandas</div><div class="line">pd.read_csv(<span class="string">'iris.csv'</span>, index_col=[<span class="number">0</span>,<span class="number">1</span>], skipinitialspace=<span class="keyword">True</span>)</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#for .txt file</span></span><br><span class="line">file = drive.CreateFile(&#123;<span class="string">'id'</span>: <span class="string">"替换成你的 .txt 文件 id"</span>&#125;) </span><br><span class="line">file.GetContentString()</span><br><span class="line"></span><br><span class="line"><span class="comment">#for .csv file</span></span><br><span class="line"><span class="comment">#GetContentString()只能打印第一行数据</span></span><br><span class="line">file = drive.CreateFile(&#123;<span class="string">'id'</span>: <span class="string">"替换成你的 .csv 文件 id"</span>&#125;) </span><br><span class="line"><span class="comment">#这里的下载操作只是缓存，不会在你的Google Drive 目录下多下载一个文件</span></span><br><span class="line">file.GetContentFile(<span class="string">'iris.csv'</span>, <span class="string">"text/csv"</span>) </span><br><span class="line"><span class="comment"># 直接打印文件内容</span></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'iris.csv'</span>) <span class="keyword">as</span> f:</span><br><span class="line">  <span class="keyword">print</span> f.readlines()</span><br><span class="line"><span class="comment"># 用 pandas 读取</span></span><br><span class="line"><span class="keyword">import</span> pandas</span><br><span class="line">pd.read_csv(<span class="string">'iris.csv'</span>, index_col=[<span class="number">0</span>,<span class="number">1</span>], skipinitialspace=<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
 <p>Colab 会直接以表格的形式输出结果</p>
 <p>写文件操作</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 创建一个文本文件</span></div><div class="line">uploaded = drive.CreateFile(&#123;<span class="string">'title'</span>: <span class="string">'示例.txt'</span>&#125;)</div><div class="line">uploaded.SetContentString(<span class="string">'测试内容'</span>)</div><div class="line">uploaded.Upload()</div><div class="line">print(<span class="string">'创建后文件 id 为 &#123;&#125;'</span>.format(uploaded.get(<span class="string">'id'</span>)))</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建一个文本文件</span></span><br><span class="line">uploaded = drive.CreateFile(&#123;<span class="string">'title'</span>: <span class="string">'示例.txt'</span>&#125;)</span><br><span class="line">uploaded.SetContentString(<span class="string">'测试内容'</span>)</span><br><span class="line">uploaded.Upload()</span><br><span class="line">print(<span class="string">'创建后文件 id 为 &#123;&#125;'</span>.format(uploaded.get(<span class="string">'id'</span>)))</span><br></pre></td></tr></table></figure>
 <p>下载文件到本地</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">with</span> open(<span class="string">'example.txt'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> f:</div><div class="line">  f.write(<span class="string">'测试内容'</span>)</div><div class="line">files.download(<span class="string">'example.txt'</span>)</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">'example.txt'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> f:</span><br><span class="line">  f.write(<span class="string">'测试内容'</span>)</span><br><span class="line">files.download(<span class="string">'example.txt'</span>)</span><br></pre></td></tr></table></figure>
 <p>至此，所有的介绍完毕，请开始你的机器学习吧，事不宜迟，赶快动手试试看。至于实战什么的，试着试着就知道咯，欢迎入坑！</p>
-<h3 id="参考文章链接"><a href="#参考文章链接" class="headerlink" title="参考文章链接"></a>参考文章链接</h3><p><a href="https://zhuanlan.zhihu.com/p/33344222" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/33344222</a></p>
-<p><a href="https://segmentfault.com/a/1190000012731724" target="_blank" rel="external">https://segmentfault.com/a/1190000012731724</a></p>
+<h3 id="参考文章链接"><a href="#参考文章链接" class="headerlink" title="参考文章链接"></a>参考文章链接</h3><p><a href="https://zhuanlan.zhihu.com/p/33344222" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/33344222</a></p>
+<p><a href="https://segmentfault.com/a/1190000012731724" target="_blank" rel="noopener">https://segmentfault.com/a/1190000012731724</a></p>
 
       
     </div>
+
+    
+
     
     
     
@@ -482,34 +530,19 @@
     
 
     
-
+      
     
-      <div>
-        <ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>Post author:</strong>
-    zhumark
-  </li>
-  <li class="post-copyright-link">
-    <strong>Post link:</strong>
-    <a href="http://www.zhumark.cn/2018/04/19/使用Google服务跑机器学习/" title="使用Google服务跑机器学习">http://www.zhumark.cn/2018/04/19/使用Google服务跑机器学习/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>Copyright Notice: </strong>
-    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
-  </li>
-</ul>
+    
 
-      </div>
     
 
     <footer class="post-footer">
       
         <div class="post-tags">
           
-            <a href="/tags/Google/" rel="tag"><i class="fa fa-tag"></i> Google</a>
+            <a href="/tags/Google/" rel="tag"># Google</a>
           
-            <a href="/tags/Machine-Learning/" rel="tag"><i class="fa fa-tag"></i> Machine Learning</a>
+            <a href="/tags/Machine-Learning/" rel="tag"># Machine Learning</a>
           
         </div>
       
@@ -518,6 +551,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/09/http代理浅谈/" rel="prev" title="HTTP代理浅谈">
+                HTTP代理浅谈 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -530,17 +579,10 @@
   </article>
 
 
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
           </div>
-          
-
-
           
 
   
@@ -566,8 +608,6 @@
 
   <aside id="sidebar" class="sidebar">
     
-      <div id="sidebar-dimmer"></div>
-    
     <div class="sidebar-inner">
 
       
@@ -583,79 +623,100 @@
         </ul>
       
 
-      <section class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/images/avatar.jpg"
-                alt="zhumark" />
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="zhumark">
             
               <p class="site-author-name" itemprop="name">zhumark</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
-          <nav class="site-state motion-element">
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
 
-            
-              <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
               
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
 
-            
               
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
               
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">categories</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">tags</span>
-                </a>
-              </div>
-            
-
-          </nav>
+            </nav>
+          
 
           
 
-          <div class="links-of-author motion-element">
+          
+
+          
+
+          
+          
+
+          
             
-          </div>
-
           
-          
-
-          
-          
-
           
 
         </div>
-      </section>
+      </div>
 
       
       <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
 
             
-              
+            
+            
             
 
             
@@ -663,7 +724,7 @@
             
 
           </div>
-        </section>
+        </div>
       <!--/noindex-->
       
 
@@ -679,37 +740,26 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">zhumark</span>
+
+  
 
   
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a></div>
 
 
 
 
         
-<div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-
-  
-</div>
 
 
 
@@ -733,11 +783,14 @@
 
     
 
+    
+
+    
   </div>
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -751,107 +804,11 @@
 
 
 
-  
 
 
 
 
 
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-    <script type="text/javascript">
-      (function(d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-    </script>
-  
 
 
 
@@ -865,8 +822,69 @@
 
 
   
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
 
-  <script type="text/javascript">
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.0"></script>
+
+  <script src="/js/src/motion.js?v=7.0.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/schemes/muse.js?v=7.0.0"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.0"></script>
+<script src="/js/src/post-details.js?v=7.0.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=7.0.0"></script>
+
+
+
+  
+
+
+  
+    <script>
+  window.livereOptions = {
+    refer: '2018/04/19/使用Google服务跑机器学习/'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+  
+
+
+  
+  <script>
     // Popup Window;
     var isfetched = false;
     var isXml = true;
@@ -915,6 +933,8 @@
         .css('overflow', 'hidden');
       $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
 
+      
+
       $.ajax({
         url: path,
         dataType: isXml ? "xml" : "json",
@@ -948,8 +968,9 @@
                 var title = data.title.trim();
                 var titleInLowerCase = title.toLowerCase();
                 var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
                 var contentInLowerCase = content.toLowerCase();
-                var articleUrl = decodeURIComponent(data.url);
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
                 var indexOfTitle = [];
                 var indexOfContent = [];
                 // only match articles with not empty titles
@@ -1073,7 +1094,7 @@
 
                   // select top N slices in content
 
-                  var upperBound = parseInt('3');
+                  var upperBound = parseInt('5');
                   if (upperBound >= 0) {
                     slicesOfContent = slicesOfContent.slice(0, upperBound);
                   }
@@ -1118,9 +1139,9 @@
               })
             };
             if (keywords.length === 1 && keywords[0] === "") {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
             } else if (resultItems.length === 0) {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
             } else {
               resultItems.sort(function (resultLeft, resultRight) {
                 if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
@@ -1192,34 +1213,26 @@
   
 
   
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
-
 
   
+
+  
+
   
 
   
 
   
-  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.3"></script>
-  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.3"></script>
 
+  
+
+  
+
+  
+
+  
 
   
 
 </body>
-  <script type="text/javascript" src="/js/src/colortype.js"></script>
 </html>

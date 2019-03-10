@@ -1,2 +1,2 @@
-Sitemap: http://www.zhumark.cn/sitemap.xml
-Sitemap: http://www.zhumark.cn/baidusitemap.xml
+Sitemap: http://zhumark.cn/sitemap.xml
+Sitemap: http://zhumark.cn/baidusitemap.xml
